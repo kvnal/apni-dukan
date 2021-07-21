@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apni Dukan | Dashboard</title>
+    <link rel="stylesheet" href="./css/tailwind.min.css" />
+  </head>
+  <body class="bg-gray-100">
+    <nav class="h-16 text-white shadow-xl" style="background-color: #131921">
+      <div>
+        <h1>apni-dukan</h1>
+
+        <div class="flex">
+          <form action="" class="flex-1 text-black">
+            <input type="text" placeholder="search" />
+            <input type="submit" name="search" value="search" id="" />
+          </form>
+          <a class="flex" href="">username</a>
+          <!-- redirect to edit/ logout page -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- display banner -->
+    <div
+      class="bg-gray-300 relative h-52 shadow-md"
+      style="background-image: url(./img/banner.jpg)"
+    >
+      <h1 class="absolute w-full text-center text-red-700 font-bold">
+        apni dukan
+      </h1>
+    </div>
+
+  <!-- modal Add items -->
+  
+
+
+    <!-- content / fetch -->
+    <div class="grid grid-cols-2" style="grid-template-columns: 20% 80%">
+      <!-- side bar -->
+      <div class=" bg-gray-500">
+          <h1>Categories</h1>
+        <a href="#" class="block">sports & Fitness</a>
+        <a href="#" class="block">Books</a>
+        <a href="#" class="block">Food</a>
+        <a href="#" class="block">Electronics</a>
+        <a href="#" class="block">Cloths</a>
+        <a href="#" class="block">Shoes</a>
+      </div>
+
+      <div class="grid grid-rows-2" style="grid-template-rows: 60px ">
+        <!-- Add item Modal  -->
+        <div id="modalId" class="bg-gray-900 h-full  fixed z-10 bg-opacity-70" style="width: 80%;">
+          <div class="bg-white m-8 ">            
+            <span class="float-right pr-2 text-gray-800  font-bold text-2xl ">&times;</span>
+            <div class="block text-center p-10">
+
+              <h1 class="text-center" >Add product</h1>
+              <form action="" class="p-2 ">
+                <div class="flex " style="width: 40%;">
+                  <input type="text" style="width: 100%;"   class=" border-2 border-gray-500" placeholder="Title">
+                  <input type="number"  style="width: 20%;" class=" border-2 border-gray-500" placeholder="Price " step="1">
+                </div>
+                <textarea name="" style="width: 40%;" class="translate-y-0 h-20  border-2 " placeholder="Description" id="" cols="30" rows="10"></textarea>
+                <input type="text" style="width: 40%;" class="block border-2 border-gray-500" placeholder="category">
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+          <div class="flex">
+            <h1 class="flex-1 text-center text-2xl">products</h1>
+            <button class="text-white bg-blue-500 ">Add</button>
+            <button class="text-white bg-black ">checkout</button>
+
+          </div>
+          
+          <!-- cards  -->
+        <div class="grid grid-cols-3 gap-4 p-6 mt-4 w-full">
+          <!-- card template -->
+          <div
+            class="card bg-white p-2 border-2 border-gray-300 hover:shadow-md hover:-translate-y-1 transform"
+          >
+            <!-- image -->
+            <div class="relative">
+              <input type="checkbox" class="absolute col-end-1" name="" id="" />
+              <img src="./img/banner.jpg" alt="" />
+              <!-- set fix h w -->
+            </div>
+
+            <!-- product details -->
+            <div class="pt-4">
+              <h1 class="font-medium hover:text-blue-500">Title 1</h1>
+              <h1 class="text-gray-400 text-sm hover:text-black">
+                this is description
+              </h1>
+              <h1 class="text-red-500 text-2xl">₹100/-</h1>
+              <div class="flex">
+                <h1 class="flex-1 text-green-500">In stock</h1>
+                <h1 class="text-yellow-500">Rating 5/5</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cards end -->
+    </div>
+  </body>
+</html>

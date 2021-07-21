@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast KYC</title>
+    <link rel="stylesheet" href="./css/face.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet"> -->
+<!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+</head>
+<body>
+    
+     
+    
+    <nav class=" navbar navbar-expand-lg white  text-blue-800">
+        <a class="navbar-brand font-medium text-3xl" href="/dashboard">Apni Dukaan</a>
+          
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <form class="form-inline my-1">
+                <div class="block ">
+                  
+                </div>
+                <!-- <button class=" bg-blue-800  text-white  px-2 py-1 " type="submit">Search</button> -->
+              </form>
+          </ul>
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item avatar mr-3 text-2xl">
+                <a class="nav-link p-0" href="#">
+                    Admin
+                </a>
+            </li>
+            <li class="nav-item avatar mr-5">
+              <a class="nav-link p-0" href="#">
+                <i class="fas fa-shopping-cart fa-2x"></i>    
+                </a>
+            </li>
+        </ul>
+          
+      </nav>
+       
+    <canvas id="canvas" width="0" height="0"></canvas>
+    <canvas id="canvas2" width="0" height="0"></canvas>
+    
+    <div class="image">
+        <label for="image" >Upload Your Adhaar scanned copy</label>
+        <input type="file" name="image" id="image" >
+    </div>
+    <div class="video">
+        <h1 id="title">Fast K Y C</h1>
+        <progress id="progress" value="0" max="100"></progress>
+        <h5 id="status">Status : Not Started</h5>
+    <div class="player">
+        <video id="videoID" width="720" height="360" autoplay muted></video>
+        
+    </div>
+    <div class="btn">
+        <button onclick="takepicture()" id="click" disabled>Click</button>
+    </div>
+
+    <div>
+        <a href="/dashboard"><h2 id="adhaarId" style="color: #00B6E3; display: none;" ></h2>
+        </a>
+        <!-- <button onclick="" id="redirect">DONE!</button> -->
+    </div>
+    </div>
+    
+</body>
+<script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+<!-- <script defer src="face-api.min.js"></script> -->
+<script defer src="./js/face.js"></script>
+<script src='https://unpkg.com/tesseract.js@v2.0.2/dist/tesseract.min.js'></script>
+</html>

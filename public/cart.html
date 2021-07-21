@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConnectX | Dashboard</title>
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="">
+    <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <!--Navbar-->
+
+ 
+
+
+    <nav class="navbar navbar-expand-lg white  text-blue-800">
+      <a class="navbar-brand font-medium text-3xl" href="/dashboard">Apni Dukaan</a>
+        
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <form class="form-inline my-1">
+              <div class="block ">
+                <input class="border bg-gray-200 px-2 outline-none text-black py-1 ml-80 w-96" type="text" placeholder="Search"
+                  aria-label="Search">
+              </div>
+              <button class=" bg-blue-800  text-white  px-2 py-1 " type="submit">Search</button>
+            </form>
+        </ul>
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+          <li class="nav-item avatar mr-3 text-2xl">
+              <a class="nav-link p-0" href="#">
+                  Username
+              </a>
+          </li>
+          <li class="nav-item avatar mr-5">
+            <a class="nav-link p-0" href="#">
+              <i class="fas fa-shopping-cart fa-2x"></i>    
+              </a>
+          </li>
+      </ul>
+        
+    </nav>
+     
+    <div>
+      <h1 class="text-3xl text-center  font-bold p-4">Checkout</h1>
+    </div>
+
+    <div class="grid grid-cols-2 pb-2 border-blue-800 border-b-2  m-4 mx-4" style="grid-template-columns: 1fr 2fr;">
+            <div>
+              <h1 class="font-bold ">1  Shipping Address</h1>
+
+            </div>
+            <div>
+              <!-- form -->
+              <label for="adress"></label>
+              <textarea name="adress" id="" placeholder="Your Shipping Address" class=" bg-gray-100 border border-blue-800 p-2 w-3/4 h-40"></textarea>
+            </div>
+
+    </div>
+    <div class="grid grid-cols-2 pb-2 border-blue-800 border-b-2 m-4 mx-4" style="grid-template-columns: 1fr 2fr;">
+      <div>
+        <h1 class="font-bold ">2  Payment Method</h1>
+        
+      </div>
+      <div class="font-bold " >
+        <div >
+          <input type="radio" name="payment" value="payment">
+          <label for="payment">Cash on Delivery</label>
+        </div>
+        <div>
+          <input type="radio" name="payment" value="payment">
+          <label for="payment">Credit / Debit Cart</label>
+        </div>
+        <div>
+          <input type="radio" name="payment" value="payment">
+          <label for="payment">Gpay / Apple Pay</label>
+        </div>
+      </div>
+      <div>
+        <!-- dummy COD/ATM/VISA/ etc. -->
+        
+      </div>
+
+</div>
+
+<div class="grid grid-cols-2 pb-2 border-blue-800 border-b-2 m-2 mx-4" style="grid-template-columns: 1fr 2fr;">
+  <div>
+    <h1 class="font-bold">3  Review items and shipping</h1>
+      </div>
+      <div>
+        <table class="border-2 border-blue-800 mb-4 ">
+          <thead  class="bg-blue-800 text-white">
+            <th class="  p-2">Name</th>
+            <th class="  p-2">Description</th>
+            <th class="  p-2">Category</th>
+            <th class=" p-2">Price</th>
+            <th class=" p-2">Qty.</th>
+            <th class=" p-2">Rating</th>
+          </thead>
+  
+          <tbody class="font-mono bg-gray-100  ">
+            <tr>
+              <td class="px-2">this is title</td>
+              <td class="px-2">desc</td>
+              <td class="px-2">cat.</td>
+              <td class="px-2">₹100/-</td>
+              <td class="px-2">1</td>
+              <td class="px-2">5/5</td>
+            </tr>
+            
+            <tr  class=" font-mono bg-green-200">
+              <td class="px-2"></td>
+              <td class="px-2"></td>
+              <td class="px-2"></td>
+              <td class="px-2"></td>
+              <td class="font-bold px-2">Total</td>
+              <td class=" font-bold px-2">₹100</td>
+            </tr>
+          </tbody>
+        </table>
+        
+
+      </div>
+      
+  </div>
+  <div class="block  p-4 ">
+    <button class="p-2 block bg-blue-800 text-white w-max m-auto">Place your order </button>
+  <div>
+    
+    <div class="p-2 block font-italic font-weight-normal text-center text-gray-700">
+      Thank You for shipping with Us :)
+    </div>
+  </div>
+
+</div>
+       
+</footer>
+<!-- Footer -->
+    
+  </body>
+</html>
